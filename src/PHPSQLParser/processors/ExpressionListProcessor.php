@@ -362,6 +362,9 @@ class ExpressionListProcessor extends AbstractProcessor {
                     $curr->setSubTree(false);
 
                     switch ($curr->getToken(0)) {
+                    case':':
+                        $curr->setTokenType(ExpressionType::PARAM);
+                        break;
                     case "'":
                     case '"':
                     // it is a string literal

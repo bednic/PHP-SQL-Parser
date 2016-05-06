@@ -61,6 +61,7 @@ class ExpressionType {
     const COLREF = 'colref';
     const RESERVED = 'reserved';
     const CONSTANT = 'const';
+    const PARAM = 'param';
 
     const AGGREGATE_FUNCTION = 'aggregate_function';
     const CUSTOM_FUNCTION = 'custom_function';
